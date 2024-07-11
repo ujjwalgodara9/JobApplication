@@ -1,0 +1,18 @@
+We use @Autowired or make it final and then use
+
+Relationships between table, json ignore
+
+
+
+Tips:
+
+While using builder to update only tell the id. here i got the id of the job to be updated ( getjob.getId ).
+
+Job updatedJob = Job.builder()
+                        .id(getjob.getId())
+                        .name(job.getName())
+                        .description(job.getDescription())
+                        .location(job.getLocation())
+                        .maxSalary(job.getMaxSalary())
+                        .minSalary(job.getMinSalary())
+                        .build();
